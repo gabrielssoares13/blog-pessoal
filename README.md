@@ -45,7 +45,6 @@ Este projeto é um clone simples da popular página de links Linktree, que permi
 ## 📷 Inspiração
 
 - [Linktree](https://linktr.ee/)
-- [Mini projetos Codante](https://codante.io/mini-projetos/pagina-de-links)
 
 ---
 
