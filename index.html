@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Links - Clone Linktree</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .link-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex justify-center items-center p-4">
+    <div class="max-w-md w-full bg-white rounded-lg shadow-xl p-8">
+        <!-- Perfil -->
+        <div class="text-center mb-8">
+            <img
+                src="https://via.placeholder.com/150"
+                alt="Foto de Perfil"
+                class="w-30 h-30 rounded-full mx-auto mb-4 border-4 border-gray-300 hover:border-blue-400 transition-all"
+            >
+            <h1 class="text-2xl font-bold text-gray-800" id="profile-name">Seu Nome Aqui</h1>
+            <p class="text-gray-600 mt-2" id="profile-bio">Bem-vindo à minha página de links! Conecte-se comigo nas redes sociais e acesse meus projetos favoritos.</p>
+        </div>
+
+        <!-- Seção de nícos sociais -->
+        <div class="flex justify-center space-x-4 mb-8">
+            <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">
+                <span class="text-2xl">🔗</span> Instagram
+            </a>
+            <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">
+                <span class="text-2xl">🔗</span> Twitter
+            </a>
+            <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">
+                <span class="text-2xl">🔗</span> YouTube
+            </a>
+            <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">
+                <span class="text-2xl">🔗</span> GitHub
+            </a>
+        </div>
+
+        <!-- Lista de links -->
+        <div class="space-y-4" id="links-list">
+            <a href="https://example.com/portfolio" class="block bg-gradient-to-r from-purple-500 to-blue-500 text-white p-4 rounded-lg text-center font-semibold hover:shadow-lg transition-all link-button">
+                Meu Portfólio
+            </a>
+            <a href="https://example.com/blog" class="block bg-gradient-to-r from-green-500 to-teal-500 text-white p-4 rounded-lg text-center font-semibold hover:shadow-lg transition-all link-button">
+                Blog Pessoal
+            </a>
+            <a href="https://example.com/loja" class="block bg-gradient-to-r from-yellow-500 to-orange-500 text-white p-4 rounded-lg text-center font-semibold hover:shadow-lg transition-all link-button">
+                Loja Online
+            </a>
+            <a href="https://example.com/contato" class="block bg-gradient-to-r from-red-500 to-pink-500 text-white p-4 rounded-lg text-center font-semibold hover:shadow-lg transition-all link-button">
+                Entre em Contato
+            </a>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="text-center mt-8 text-gray-500 text-sm">
+            Criado com <span class="text-red-500">[HEART]</span> | Personalize sua própria página
+        </div>
+    </div>
+
+    <script>
+        // Função simples para permitir edição básica (ex.: prompt no console)
+        // Você pode expandir isso para um backend no futuro
+        function editProfile() {
+            const name = prompt("Digite seu nome:");
+            const bio = prompt("Digite sua bio:");
+            if (name) document.getElementById("profile-name").textContent = name;
+            if (bio) document.getElementById("profile-bio").textContent = bio;
+        }
+
+        // Chamar a função ao clicar no nome (para demo)
+        document.getElementById("profile-name").addEventListener("click", editProfile);
+    </script>
+</body>
+</html>
+</content>
+</create_file>
